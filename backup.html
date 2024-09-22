@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 容器为栅格布局 */
+        .container {
+            display: grid;
+            box-shadow: 0px 10px 50px 10px lightgrey;
+            /*简历周围阴影*/
+            width: 900px;
+            margin: 100px auto;
+            /*background: red;*/
+
+        }
+
+        /* 简历上方线条 */
+        .topline {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .top_left {
+            background-color: #248CB1;
+            height: 30px;
+            width: 30px;
+            /*transform: translate(-30px,0);  !*  向左偏移  *!*/
+        }
+
+        .top_left1 {
+            background-color: #248CB1;
+            height: 30px;
+            width: 200px;
+            /*transform: translate(-30px,0);  !*  向左偏移  *!*/
+        }
+
+        .top_right {
+            background-color: black;
+            height: 30px;
+            width: 100%;
+            /*transform: translate(-30px,0);*/
+            margin-bottom: 20px;
+        }
+
+        .top_right p {
+            transform: translate(0, -10px);
+            color: whitesmoke;
+            font-weight: bold;
+            /*  粗体  */
+        }
+
+        /*   mid  */
+        .mid {
+            margin-left: 30px;
+        }
+
+
+        /*照片*/
+        .ikun {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+        }
+
+        .ikun_mid {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .ikun_mid span {
+            font-size: 40px;
+        }
+
+        .ikun_right {
+            display: flex;
+            flex-direction: column;
+            margin-left: 230px;
+            align-items: flex-end;
+        }
+
+        .ikun_r1,
+        .ikun_r2,
+        .ikun_r3,
+        .ikun_r4 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: -15px;
+        }
+
+        .normal {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 先定一个大的容器 -->
+    <div class='container'>
+        <div class='topline'>
+            <div class='top_left'></div>
+            <div class='top_right'>
+                <p>个人简历</p>
+            </div>
+        </div>
+        <div class='mid'>
+            <div class='ikun'>
+                <img width='140px' height='170px' src='img/12.jpg'>
+                <div class='ikun_mid'>
+                    <h3><span>黄优萍</span>
+                        <br>
+                        <p style='color: #4088A5'>求职意向:软件测试</p>
+                    </h3>
+                </div>
+                <div class='ikun_right'>
+                    <div class='ikun_r1'>
+                        <p>21岁</p>
+                        <img src='images/1.svg' width='30px' height='30px' style='transform: translate(5px,10px)'>
+                    </div>
+                    <div class='ikun_r2'>
+                        <p>1xxxxxxxxx</p>
+                        <img src='images/2.svg' width='30px' height='30px' style='transform: translate(5px,10px)'>
+                    </div>
+                    <div class='ikun_r3'>
+                        <p>1xxxxxxx@qq.com</p>
+                        <img src='images/3.svg' width='30px' height='30px' style='transform: translate(5px,10px)'>
+                    </div>
+                    <div class='ikun_r4'>
+                        <p>中国xxx</p>
+                        <img src='images/4.svg' width='30px' height='30px' style='transform: translate(5px,10px)'>
+                    </div>
+                </div>
+            </div>
+            <div class='edu'>
+                <h3 style='margin-bottom: -8px;'><span style='border-bottom: 3px solid black'>教育背景</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p>2022.07~2024.01</p>
+                    <p style='margin-left: 100px'>北京大学</p>
+                    <p style='margin-left: 100px'>计算机专业（专科）</p>
+                </div>
+                <p style='margin-top: -10px'>主修课程：python、HTML+CSS、PHP、java</p>
+            </div>
+            <div class='work'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>实习经验</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p>2022.04~至今</p>
+                    <p style='margin-left: 100px'>中南哇唧唧哇本科生院</p>
+                    <p style='margin-left: 100px'>预备Idol</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>主修课程：PHP、ps、java、前端设计</li>
+                    <li>为了爱与正义，为了世界和平，我们ikun要站出来；</li>
+                    <li>我就是中南之光。</li>
+                </ul>
+                <div class='normal'>
+                    <p>2020.03~2024.03</p>
+                    <p style='margin-left: 100px'>中南哇唧唧哇研究生院</p>
+                    <p style='margin-left: 100px'>预备Idol研究生</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>主修课程：pr、python、HTML、日语</li>
+                    <li>为了爱与正义，为了世界和平，我们ikun要站出来；</li>
+                    <li>我就是中南之光。</li>
+                </ul>
+                <br>
+            </div>
+            <div class='school'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>校园经历</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p>2020.03~2024.06</p>
+                    <p style='margin-left: 100px'>北京大学</p>
+                    <p style='margin-left: 100px'>校园形象大使</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>带领自己的团队完成练习计划；</li>
+                    <li>为了爱与正义，为了世界和平，我们ikun要站出来；</li>
+                    <li>我就是中南之光。</li>
+                </ul>
+            </div>
+            <div class='tech'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>技能证书</span></h3>
+                <hr>
+                <p>计算机四级；</p>
+                <p>大学英语8级；</p>
+                <p>工程师。</p>
+            </div>
+            <div class='self'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>自我评价</span></h3>
+                <hr>
+                <p>
+                    大家好，我是练习时长两年半的个人练习生，我深耕中南十余载，历尽千辛万苦，终学得一技之长，希望我能为我的粉丝们带来快乐，
+                    跟着我左手右手一个慢动作，右手左手慢动作重播。
+                </p>
+            </div>
+        </div>
+        <div class='topline'>
+            <div class='top_left1'></div>
+            <div class='top_right'>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
