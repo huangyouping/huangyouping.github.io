@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://huangyouping.hg-docusarus',
+  url: 'https://huangyouping.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hg-docusarus',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'huangyouping', // Usually your GitHub org/user name.
-  projectName: 'hg-docusarus', // Usually your repo name.
+  projectName: 'huangyouping.github.io', // Usually your repo name.
   deploymentBranch:'gh-pages',
 
   onBrokenLinks: 'throw',
