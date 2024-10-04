@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 容器为栅格布局 */
+        .container {
+            display: grid;
+            box-shadow: 0px 10px 50px 10px lightgrey;
+            /*简历周围阴影*/
+            width: 900px;
+            margin: 100px auto;
+            /*background: red;*/
+
+        }
+
+        /* 简历上方线条 */
+        .topline {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .top_left {
+            background-color: #248CB1;
+            height: 30px;
+            width: 30px;
+            /*transform: translate(-30px,0);  !*  向左偏移  *!*/
+        }
+
+        .top_left1 {
+            background-color: #248CB1;
+            height: 30px;
+            width: 200px;
+            /*transform: translate(-30px,0);  !*  向左偏移  *!*/
+        }
+
+        .top_right {
+            background-color: black;
+            height: 30px;
+            width: 100%;
+            /*transform: translate(-30px,0);*/
+            margin-bottom: 20px;
+        }
+
+        .top_right p {
+            transform: translate(0, -10px);
+            color: whitesmoke;
+            font-weight: bold;
+            /*  粗体  */
+        }
+
+        /*   mid  */
+        .mid {
+            margin-left: 30px;
+        }
+
+
+        /*照片*/
+        .ikun {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+        }
+
+        .ikun_mid {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .ikun_mid span {
+            font-size: 35px;
+        }
+
+        .ikun_right {
+            display: flex;
+            flex-direction: column;
+            margin-left: 230px;
+            align-items: flex-end;
+        }
+
+        .ikun_r1,
+        .ikun_r2,
+        .ikun_r3,
+        .ikun_r4,
+        .ikun_r5,
+        .ikun_r6{
+            /* display: flex; */
+            flex-direction: row;
+            margin-bottom: -15px;
+        }
+
+        .normal {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+        }
+        .name {
+            font-family: "font-weight: bold;";
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 先定一个大的容器 -->
+    <div class='container'>
+        <div class='topline'>
+            <div class='top_left'></div>
+            <div class='top_right'>
+                <p>个人简历</p>
+            </div>
+        </div>
+        <div class='mid'>
+            <div class='ikun'>
+                <img width='140px' height='170px' src='img/12.jpg'>
+                <div class='ikun_mid'>
+                    <span class="name">黄优萍</span>
+                    <div class='ikun_r5'>
+                        <p>电话号码：15955133279</p>
+                    </div>
+                    <div class='ikun_r6'>
+                        <p>邮箱：ailvyoyo@126.com</p>
+                    </div>
+                    <div class='ikun_r6'>
+                        <p>民    族	：汉</p>
+                    </div>
+                    <div class='ikun_r6'>
+                        <p>住    址：安徽省合肥市高新区</p>
+                    </div>
+                </div>
+                <div class='ikun_right'>
+                    <div class='ikun_r1'>
+                        <p>出生年月：1993.05</p>
+                    </div>
+                    <div class='ikun_r2'>
+                        <p>身    高：165cm</p>
+                    </div>
+                    <div class='ikun_r3'>
+                        <p>政治面貌：群众</p>
+                    </div>
+                    <div class='ikun_r3'>
+                        <p>毕业院校：安徽大学</p>
+                    </div>
+                    <div class='ikun_r4'>
+                        <p>学    历	：硕士研究生</p>
+                    </div>
+                </div>
+            </div>
+            <div class='edu'>
+                <h3 style='margin-bottom: -8px;'><span style='border-bottom: 3px solid black'>教育背景</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p>2015.07-2018.06</p>
+                    <p style='margin-left: 100px'>安徽大学</p>
+                    <p style='margin-left: 100px'>电子与通信工程（硕士研究生）</p>
+                </div>
+                <div class='normal'>
+                    <p>2010.07-2014.06</p>
+                    <p style='margin-left: 100px'>安徽师范大学皖江学院</p>
+                    <p style='margin-left: 100px'>电子信息工程（本科）</p>
+                </div>
+            </div>
+            <div class='work'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>工作经历</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p>2021.03~至今</p>
+                    <p style='margin-left: 100px'>软视软件（合肥）有限工作（Zoom）</p>
+                    <p style='margin-left: 100px'>软件测试（QA）工程师</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>负责参与公司billing相关业务的web/mobile平台的软件测试任务，保证系统质量及上线的软件质量；</li>
+                    <li>负责测试计划的制定，测试用例的设计，执行，bug的缺陷管理及跟踪</li>
+                    <li>负责所参与业务的UI/API相关自动化测试编写及相关维护；</li>
+                    <li>负责定期向US方面同步相关软件质量的测试进度和测试结果。</li>
+                </ul>
+                <div class='normal'>
+                    <p>2018.07~2021.03</p>
+                    <p style='margin-left: 100px'>北京辰安科技股份有限公司</p>
+                    <p style='margin-left: 100px'>软件测试工程师</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>主参与项目的需求分析过程，推动产品的项目开发上线；</li>
+                    <li>负责项目测试计划，测试用例等编写以及测试环境的搭建及维护；</li>
+                    <li>负责承担多项大型项目的测试工作，包括各项目所需的安全测试，性能测试及自动化测试等。保证整个项目周期的过程管控及质量环节；</li>
+                    <li>负责支撑并推动项目整体验收，完成其他上级交办的系统演示等工作；</li>
+                </ul>
+                <br>
+            </div>
+            <div class='skills'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>专业技能</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p style='margin-left: 15px'>语言技能：</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>语六级CET6，普通话二级甲等有良好的听说读写能力，良好的英文阅读和沟通能力；</li>
+                </ul>
+                <div class='normal'>
+                    <p style='margin-left: 15px'>专业技能：</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>熟练掌握包含UI、API等自动化测试框架开发,测试脚本编写及维护</li>
+                    <li>熟练使用Oralce，MySQL，DynamoDB等数据库操作语言及编写；</li>
+                    <li>掌握Jmeter,loadrunner等性能测试工具；</li>
+                    <li>掌握postman/clarles/Fiddler等专业工具；</li>
+                    <li>熟练运用安全渗透测试工具burpSuite，对系统常见安全漏进行验证检测；</li>
+                </ul>
+                <div class='normal'>
+                    <p style='margin-left: 15px' >办公技能：</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>熟练使用office办公软件，photoshop，visio；</li>
+                </ul>
+                <div class='normal'>
+                    <p style='margin-left: 15px'>软件技能：</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>熟悉Python开发语言并独立编写接口自动化测试工具成功应用于项目；</li>
+                    <li>其他相关语言JavaScript，HTMLCSS等前端技术熟悉；</li>
+                </ul>
+            </div>
+            <div class='tech'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>获得成果</span></h3>
+                <hr>
+                <div class='normal'>
+                    <p style='margin-left: 15px'>学生期间：</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>多次荣获各项国家，校外企业奖学金；</li>
+                    <li>发表完成发明型专利，专利号：CN201610899641.4</li>
+                    <li>发表SCI一区论文《Gas bubble templated synthesis of Mn3O4-embedded hollow carbon nanospheres in ethanol flame for elastic supercapacitor》参与实验室多次产学合作项目及多项学院研究课题</li>
+                    <li>参与实验室多次产学合作项目及多项学院研究课题</li>
+                    <li>优秀研究生毕业生</li>
+                </ul>
+                <div class='normal'>
+                    <p style='margin-left: 15px'>工作期间：</p>
+                </div>
+                <ul style='margin-top: -10px;margin-left: -15px'>
+                    <li>负责担任多项大型项目的测试负责人，推进公司大型项目的顺利验收，满足用户需求。并同步支撑多项正在进行的项目过程质量；</li>
+                    <li>2020年度优秀员工</li>
+                    <li>软件评测师</li>
+                </ul>
+            </div>
+            <div class='self'>
+                <h3 style='margin-bottom: -8px'><span style='border-bottom: 3px solid black'>自我评价</span></h3>
+                <hr>
+                <p>
+                    性格热情大方，为人诚恳，吃苦耐劳，有着严谨科学的科研精神，生活中是个懂得包容，沉稳，关注细节的人，对待工作内容可以保持高度的敏感性和关注度，熟悉软件系统一定的开发流程，有很强的业务理解，需求分析及发觉潜在问题的能力，善于沟通，贴近用户。
+                </p>
+            </div>
+        </div>
+        <div class='topline'>
+            <div class='top_left1'></div>
+            <div class='top_right'>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
